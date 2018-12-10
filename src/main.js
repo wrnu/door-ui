@@ -2,21 +2,22 @@ import Vue from 'vue';
 import firebase from 'firebase';
 import App from './App.vue';
 import router from './router';
+import config from './config'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 Vue.config.productionTip = false;
 
 let app = '';
-const config = {
-  apiKey: "AIzaSyDUUTeOsVix5EGuL0Zuclowk8boDgch8pI",
-  authDomain: "door-20761.firebaseapp.com",
-  databaseURL: "https://door-20761.firebaseio.com",
-  projectId: "door-20761",
-  storageBucket: "door-20761.appspot.com",
-  messagingSenderId: "674832136931"
+const firebase_config = {
+  apiKey: config.FIREBASE_API_KEY,
+  authDomain: config.FIREBASE_AUTH,
+  databaseURL: config.FIREBASE_DB,
+  projectId: config.FIREBASE_PROJECT,
+  storageBucket: config.FIREBASE_BUCKET,
+  messagingSenderId: config.FIREBASE_SENDER_ID,
 };
 
-const firebaseApp = firebase.initializeApp(config);
+const firebaseApp = firebase.initializeApp(firebase_config);
 const firestore = firebaseApp.firestore();
 
 export {
