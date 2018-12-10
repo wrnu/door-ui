@@ -3,8 +3,8 @@
     <h1>Charles Street Home</h1>
     <h3>Sign In</h3>
     <div class="container-fluid">
-      <input type="text" v-model="email" placeholder="Email" class="form-control">
-      <input type="password" v-model="password" placeholder="Password" class="form-control">
+      <input v-on:keyup.enter="login" type="text" v-model="email" placeholder="Email" class="form-control">
+      <input v-on:keyup.enter="login" type="password" v-model="password" placeholder="Password" class="form-control">
       <button v-on:click="login" type="button" class="btn btn-primary">Login</button>
     </div>
   </div>
@@ -41,12 +41,14 @@
     margin-top: 1em;
   }
   input {
+    font-size: 24pt;
     margin: 1em auto;
-    width: 25%;
+    width: 80%;
   }
   button {
-    margin-top: 1em;
-    width: 10%;
+    font-size: 36pt;
+    margin: 1em auto;
+    width: 50%;
     cursor: pointer;
   }
 </style>

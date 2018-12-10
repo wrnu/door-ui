@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-fluid">
     <router-view/>
   </div>
 </template>
@@ -10,7 +10,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+  background-color: #2c3e50;
+  min-width: 320px;
+  max-width: 720px;
+  box-shadow: 10px 10px 5px grey;
+  padding: 2em;
 }
 #nav {
   padding: 30px;

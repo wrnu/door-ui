@@ -33,11 +33,21 @@ export default {
 <style>
 
 #unlock {
-  margin: 0.5em;
+  margin: 2em;
+}
+
+#unlock button {
+  padding: 0.5em;
+  font-size: 36pt;
 }
 
 #logout {
   margin: 0.5em;
+}
+
+#logout button {
+  padding: 0.5em;
+  font-size: 36pt;
 }
 
 </style>
