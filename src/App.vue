@@ -8,6 +8,15 @@
 
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css";
 
+h1 {
+  text-shadow: 2px 2px 1px #1c2e40;
+}
+
+button {
+  text-shadow: 1px 1px 0px #3c4eA0;
+  box-shadow: 2px 2px 1px #1c2e40;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,16 +29,5 @@
   box-shadow: 10px 10px 5px grey;
   padding: 2em;
 }
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

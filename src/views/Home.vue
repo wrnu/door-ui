@@ -52,14 +52,6 @@ export default {
 
 <style>
 
-h1 {
-  text-shadow: 2px 2px 1px #1c2e40;
-}
-
-button {
-  text-shadow: 1px 1px 0px #3c4eA0;
-}
-
 #imageContainer {
   margin: 2em;
 }
@@ -76,7 +68,6 @@ button {
 #unlock button {
   padding: 0.5em;
   font-size: 36pt;
-  box-shadow: 2px 2px 1px #1c2e40;
 }
 
 #logout {
@@ -86,7 +77,6 @@ button {
 #logout button {
   padding: 0.5em;
   font-size: 36pt;
-  box-shadow: 2px 2px 1px #1c2e40;
 }
 
 </style>
