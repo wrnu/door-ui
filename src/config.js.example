@@ -1,0 +1,16 @@
+
+const FIREBASE_API_KEY="IzaSyDUUTeOsVix5EGuL0Zuclowk8boDgch8pI";
+const FIREBASE_AUTH="oor-20761.firebaseapp.com";
+const FIREBASE_DB="https://door-20761.firebaseio.com";
+const FIREBASE_PROJECT="door-20761";
+const FIREBASE_BUCKET="door-20761.appspot.com";
+const FIREBASE_SENDER_ID="674832136931";
+
+export default {
+  FIREBASE_API_KEY,
+  FIREBASE_AUTH,
+  FIREBASE_DB,
+  FIREBASE_PROJECT,
+  FIREBASE_BUCKET,
+  FIREBASE_SENDER_ID,
+};
