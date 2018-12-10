@@ -22,7 +22,7 @@ var data = {
 
 export default {
   name: 'home',
-  data() {
+  data: function() {
     return data;
   },
   methods: {
@@ -59,6 +59,7 @@ export default {
 #image {
   width: 100%;
 }
+
 #unlock {
   margin: 2em;
 }
