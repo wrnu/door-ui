@@ -1,26 +1,43 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <button @click="logout">Logout</button>
+    <h1>Charles Street Home</h1>
+    <div id="unlock">
+      <button v-on:click="unlock()" type="button" class="btn btn-primary">Unlock</button>
+    </div>
+    <div id="logout">
+      <button v-on:click="logout()" type="button" class="btn btn-primary">Logout</button>
+    </div>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase';
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import {firebaseApp, firestore} from '../main';
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  },
   methods: {
     logout: function() {
-      firebase.auth().signOut().then(() => {
+      firebaseApp.auth().signOut().then(() => {
         this.$router.replace('login')
       })
+    },
+    unlock: function() {
+      firestore.collection('frontdoor')
+                 .doc('action')
+                 .set({'unlock': true});
     }
   }
 }
 </script>
+
+<style>
+
+#unlock {
+  margin: 0.5em;
+}
+
+#logout {
+  margin: 0.5em;
+}
+
+</style>

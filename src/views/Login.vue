@@ -1,10 +1,12 @@
 <template>
-  <div class="login">
+  <div class="container-fluid login">
+    <h1>Charles Street Home</h1>
     <h3>Sign In</h3>
-    <input type="text" v-model="email" placeholder="Email"><br>
-    <input type="password" v-model="password" placeholder="Password"><br>
-    <button @click="login">Connection</button>
-    <p>You don't have an account ? You can <router-link to="/sign-up">create one</router-link></p>
+    <div class="container-fluid">
+      <input type="text" v-model="email" placeholder="Email" class="form-control">
+      <input type="password" v-model="password" placeholder="Password" class="form-control">
+      <button v-on:click="login" type="button" class="btn btn-primary">Login</button>
+    </div>
   </div>
 </template>
 
@@ -36,24 +38,15 @@
 
 <style scoped>  /* "scoped" attribute limit the CSS to this component only */
   .login {
-    margin-top: 40px;
+    margin-top: 1em;
   }
   input {
-    margin: 10px 0;
-    width: 20%;
-    padding: 15px;
+    margin: 1em auto;
+    width: 25%;
   }
   button {
-    margin-top: 20px;
+    margin-top: 1em;
     width: 10%;
-    cursor: pointer;
-  }
-  p {
-    margin-top: 40px;
-    font-size: 13px;
-  }
-  p a {
-    text-decoration: underline;
     cursor: pointer;
   }
 </style>
