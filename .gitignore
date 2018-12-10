@@ -4,6 +4,10 @@ src/dist
 public
 config.js
 
+# firebase
+.firebase*
+firbase*
+
 # local env files
 .env.local
 .env.*.local
