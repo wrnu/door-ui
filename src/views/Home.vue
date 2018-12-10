@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Charles Street Home</h1>
+    <h1>Charles Street</h1>
     <div id="imageContainer">
       <img id="image" v-bind:src="url"/>
     </div>

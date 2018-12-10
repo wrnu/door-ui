@@ -24,7 +24,7 @@ const router = new Router({
       name: 'Login',
       component: Login,
       meta: {
-        title: 'Charles Street Login'
+        title: 'Charles Street'
       }
     },
     {
@@ -32,7 +32,7 @@ const router = new Router({
       name: 'Home',
       component: Home,
       meta: {
-        title: 'Charles Street Home',
+        title: 'Charles Street',
         requiresAuth: true
       }
     }

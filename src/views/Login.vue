@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid login">
-    <h1>Charles Street Home</h1>
+    <h1>Charles Street</h1>
     <h3>Sign In</h3>
     <div class="container-fluid">
       <input v-on:keyup.enter="login" type="text" v-model="email" placeholder="Email" class="form-control">
