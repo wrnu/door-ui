@@ -6,7 +6,7 @@ config.js
 
 # firebase
 .firebase*
-firbase*
+firbase.*
 
 # local env files
 .env.local
