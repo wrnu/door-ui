@@ -3,7 +3,6 @@ import firebase from 'firebase';
 import App from './App.vue';
 import router from './router';
 import config from './config';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 Vue.config.productionTip = false;
 

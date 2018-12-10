@@ -50,5 +50,7 @@
     margin: 1em auto;
     width: 50%;
     cursor: pointer;
+    box-shadow: 2px 2px 1px #1c2e40;
+    text-shadow: 1px 1px 0px #3c4eA0;
   }
 </style>
