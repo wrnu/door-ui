@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <h1>Charles Street Home</h1>
+    <div id="imageContainer">
+      <img id="image" v-bind:src="url"/>
+    </div>
     <div id="unlock">
       <button v-on:click="unlock()" type="button" class="btn btn-primary">Unlock</button>
     </div>
@@ -13,8 +16,15 @@
 <script>
 import {firebaseApp, firestore} from '../main';
 
+var data = {
+  url: ''
+};
+
 export default {
   name: 'home',
+  data() {
+    return data;
+  },
   methods: {
     logout: function() {
       firebaseApp.auth().signOut().then(() => {
@@ -25,13 +35,30 @@ export default {
       firestore.collection('frontdoor')
                  .doc('action')
                  .set({'unlock': true});
+    },
+    getImageUrl: function() {
+      firestore.collection('frontdoor')
+                .doc('image')
+                .get().then(function(doc) {
+                  data.url = doc.data().url;
+                });
     }
+  },
+  beforeMount: function() {
+    this.getImageUrl();
   }
 }
 </script>
 
 <style>
 
+#imageContainer {
+  margin: 2em;
+}
+
+#image {
+  width: 100%;
+}
 #unlock {
   margin: 2em;
 }
