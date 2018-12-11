@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd src
+vue build
+cd ..
+cp assets/favicon.ico src/dist/
+firebase deploy
