@@ -26,7 +26,7 @@ button {
   background-color: #2c3e50;
   min-width: 320px;
   max-width: 720px;
-  box-shadow: 10px 10px 30px 8px grey;
+  box-shadow: 5px 5px 30px 8px grey;
   padding: 2em;
 }
 
